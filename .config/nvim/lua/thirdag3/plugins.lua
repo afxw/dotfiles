@@ -56,6 +56,12 @@ local plugins = {
         config = function()
             require("nvim-tree").setup({})
         end
+    },
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = {
+            "nvim-tree/nvim-web-devicons"
+        }
     }
 }
 
@@ -153,3 +159,6 @@ cmp.setup {
     { name = "luasnip" },
   }
 }
+
+require("lualine").setup({
+})
